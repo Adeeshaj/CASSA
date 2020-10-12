@@ -20,7 +20,7 @@ export class TopBarComponent implements OnInit {
         this.logo = "assets_8. CASAA web project_2020-09-27/Group 325"
         this.route = "projects"
       } else if (location.path() == "/about"){
-        this.logo = "assets_8. CASAA web project_2020-09-27/Group 325"
+        this.logo = "assets_5. CASAA web Home page_2020-09-19/Group 324"
         this.route = "about"
       } else if (location.path() == "/news"){
         this.logo = "assets_8. CASAA web project_2020-09-27/Group 325"
@@ -51,6 +51,8 @@ export class TopBarComponent implements OnInit {
     console.log(this.route)
     if (this.route == "entrance"){
       return 'rgba(255, 255, 255, 0.77)'
+    } else if (this.route == "about"){
+      return '#ffffff'
     } else {
       return '#12131c'
     }
